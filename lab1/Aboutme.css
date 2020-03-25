@@ -7,12 +7,7 @@
 	margin-right: 0.2em;
 }
 
-a:-webkit-any-link {
-  color: -webkit-link;
-   text-decoration: initial;
-  cursor: auto;
-  
-}
+
 ol.mov {
   display: block;
   list-style-type: decimal;
