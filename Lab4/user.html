@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- 1. External stylesheet-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <!-- 2. Embedded styling -->
+    <style type="text/css">
+        p { font-size: 1em;}
+    </style>
+
+    <title>W1D3 - Bootstrap Demo</title>
+</head>
+<body>
+    <header>
+        <!-- TODO Add nav here -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"> MUM GOLDEN DOME MARKET </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="product.html"> Products</a> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user.html">Suppliers</a>
+                </li>
+               
+              </ul>
+            
+            </div>
+          </nav>
+    </header>
+    <main>
+
+    <div class="container">  
+      <form id="contactForm" method="POST" action="contact-form-handler">
+          <fieldset>
+            <div class="form-group">
+                <label for="ExInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted"></small> We'll never share your email with anyone else.</small>
+            </div>
+         
+            <div class="form-check">
+                <label for="ExInputPassword1"> Password</label>
+                <input type="password" class="form-control" id="inputPassword1" pattern="(?=\d+)(?=[a z]*)(?=[A Z]*).{10,}" placeholder="Password" title="Must contains at least one number, one lower case and one upper case">
+                                                                                             
+            </div>
+            
+            <div class="form-group">
+                <label for="ExInputUrl">Website URL</label>                  <!--^http.*//[a-z]-->
+                <input type="url" class="form-control" id="inputUrl" pattern="https?://.+"  placeholder="Enter website url here" title="website url must begin with http:// or https://">        
+             </div>
+             
+             <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> 
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+     </div>
+   </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
