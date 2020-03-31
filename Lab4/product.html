@@ -14,6 +14,7 @@
     </style>
 
     <title>W1D3 - Bootstrap Demo</title>
+    <script defer src="js/app.js"> </script>
 </head>
 <body>
     <header>
@@ -44,49 +45,53 @@
       
       <div class="container">  
         <h2>New Product Form </h2>
-          <div class="form-row">
-                <div class="col">
-                    <label for="productNumber">Product Number</label>
-                    <input type="text" class="form-control" id="inputNumber">
-                </div>
-                <div class="col">
-                    <label for="quantity">Quantity in Stock</label>
-                    <input type="number" class="form-control" id="inputQuantity">
-                </div>
-          </div>
-        
-          <div class="form-row">
-              <div class="col">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="inputName">
-              </div>
 
-              <div class="form-group col-md-6">
-                  <label for="supplier">Supplier</label>
-                  <select id="inputSupplier" class="form-control" aria-placeholder="">
-                      <option selected>Tom</option>
-                      <option>Peter</option>
-                  </select>
-              </div>
-          </div>
-          
-          <div class="row">
-              <div class="col">
-                 <label for="unitPrice">Unit Price</label>
-                 <input type="number" class="form-control" id="inputUnitPrice"> 
-              </div>
-              <div class="col">
-                  <label for="datesupplied">Date supplied</label>
-                  <input type="date" class="form-control" id="inputDateSupplied">
-              </div>
-          </div>
-          <div class="row justify-content-md-end">
-              <button type="reset" class="btn btn-outline-dark m-2">Reset</button>
-              <button type="button" class="btn btn-outline-danger m-2" onclick="alert('cancelled');">Cancel</button>
-              <button type="submit" class="btn btn-outline-primary m-2">Add Product</button>
-          </div>
+          <div class="row justify-content-md-center">
+           
+                 <div class="col-6">   
+                      <div class="form-group">
+                        <label for="productNumber">Product Number</label>
+                        <input type="text" class="form-control" id="inputNumber">
+                      </div>   
+
+                      <div class="form-group"> 
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="number" class="form-control" id="inputUnitPrice"> 
+                      </div>
+                </div>
+                
+                <div class="col-6"> 
+                      <div class="form-group"> 
+                        <label for="quantity">Quantity in Stock</label>
+                        <input type="number" class="form-control" id="inputQuantity">
+                      </div>
+
+                      <div class="form-group"> 
+                        <label for="supplier">Supplier</label>
+                        <select id="inputSupplier" class="form-control" aria-placeholder="">
+                        <option selected>Tom</option>
+                        <option>Peter</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group"> 
+                        <label for="datesupplied">Date supplied</label>
+                        <input type="date" class="form-control" id="inputDateSupplied">
+                      </div>  
+                </div>
 
         </div>
+        
+                      <div class="row justify-content-md-end">
+                        <button type="reset" class="btn btn-outline-dark m-2">Reset</button>
+                        <button type="button" class="btn btn-outline-danger m-2" onclick="alert('cancelled');">Cancel</button>
+                        <button onclick="showProductInfo();" type="submit" class="btn btn-outline-primary m-2">Submit</button>
+                  </div>
       </form>
 
     </main>
