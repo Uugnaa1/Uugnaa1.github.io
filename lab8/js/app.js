@@ -25,7 +25,6 @@ count.print_val()
 count.reset();
 count.print_val()
 
-
 /* question 8 */
 
 const make_adder = function(inc) {
