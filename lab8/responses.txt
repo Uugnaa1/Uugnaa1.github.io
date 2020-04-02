@@ -1,0 +1,14 @@
+
+Question 7: In the definition of add( ) shown in question 6, identify the "free" variable. In the context of a function closure, what is a "free" variable?
+
+answer:
+The free variable is 'counter' in the question 6. Free variables are variables that are not inside of the context of the function closure but are variables that are visible inside of the function closure.
+
+Question 9:
+Suppose you are given a file of Javascript code containing a list of many function and variable declarations.
+All of these function and variable names will be added to the Global Javascript namespace. What simple modification to the Javascript file can remove all the names 
+from the Global namespace?
+
+answer:
+all of them can be removed while using the module pattern, therefore they are not in the global namespace anymore.
+
