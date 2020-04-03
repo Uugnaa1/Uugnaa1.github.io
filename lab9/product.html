@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- 1. External stylesheet-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <!-- 2. Embedded styling -->
+    <style type="text/css">
+        p { font-size: 1em;}
+    </style>
+
+    <title>W1D3 - Bootstrap Demo</title>
+    <script defer src="js/event.js"> </script>
+</head>
+<body>
+    <header>
+        <!-- TODO Add nav here -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"> MUM GOLDEN DOME MARKET </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="product.html"> Products</a> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user.html">Suppliers</a>
+                </li>
+               
+              </ul>
+            
+            </div>
+          </nav>
+    </header>
+    <main>
+
+      <div class="container">  
+        <h2>New Product Form </h2>
+
+        <form id="productForm" method="POST">
+          <div class="row justify-content-md-center">
+           
+                 <div class="col-6">   
+                      <div class="form-group">
+                        <label for="productNumber">Product Number</label>
+                        <input type="text" name="productNumber" class="form-control" id="inputNumber">
+                      </div>   
+
+                      <div class="form-group"> 
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="inputName">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="number" name="unitPrice" class="form-control" id="inputUnitPrice"> 
+                      </div>
+                </div>
+                
+                <div class="col-6"> 
+                      <div class="form-group"> 
+                        <label for="quantity">Quantity in Stock</label>
+                        <input type="number" name="quantity" class="form-control" id="inputQuantity">
+                      </div>
+
+                      <div class="form-group"> 
+                        <label for="supplier">Supplier</label>
+                        <select id="inputSupplier" name="supplier" class="form-control" aria-placeholder="">
+                        <option selected>Tom</option>
+                        <option>Peter</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group"> 
+                        <label for="datesupplied">Date supplied</label>
+                        <input type="date" name="date" class="form-control" id="inputDateSupplied">
+                      </div>  
+                </div>
+
+                  <div class="row justify-content-md-end">
+                        <button type="reset" class="btn btn-outline-dark m-2">Reset</button>
+                        <button type="button" class="btn btn-outline-danger m-2" onclick="alert('cancelled');">Cancel</button>
+                        <button type="submit" class="btn btn-outline-primary m-2">Submit</button>
+                  </div>
+      </form>
+    </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
